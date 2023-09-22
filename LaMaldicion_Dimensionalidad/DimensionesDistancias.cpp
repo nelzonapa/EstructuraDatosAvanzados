@@ -41,11 +41,11 @@ int main() {
 
 
     // Abre un archivo para escribir las distancias
-    std::ofstream archivo("distanciasEuclidianas.txt");
+    ofstream archivo("distanciasEuclidianas.txt");
 
     // Verifica que el archivo se haya abierto correctamente
     if (!archivo) {
-        std::cerr << "No se pudo abrir el archivo para escritura." << std::endl;
+        cerr << "No se pudo abrir el archivo para escritura." << endl;
         return 1;
     }
 
@@ -87,7 +87,7 @@ int main() {
             //Resultado
             // cout << "Distancia Euclidiana entre punto " << i << " y punto " << j << ": " << distEuclidiana << endl;
             //Guardamos distancias
-            archivo << distEuclidiana << std::endl;
+            archivo << distEuclidiana << endl;
         }
     }
 
