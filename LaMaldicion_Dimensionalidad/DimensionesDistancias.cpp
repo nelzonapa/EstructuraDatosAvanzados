@@ -57,6 +57,7 @@ int main() {
     for (int i = 0; i < numPuntosAleatorios; ++i) {
         for (int j = 0; j < d; ++j) {
             MatrizPuntos[i][j] = dis(gen);
+            // cout<<MatrizPuntos[i][j]<<endl;
             /*
             Asigna un número aleatorio en el rango [0.0, 1.0] 
             a la coordenada j del punto i en la matriz MatrizPuntos.
@@ -84,7 +85,7 @@ int main() {
             }
             distEuclidiana = sqrt(distEuclidiana);//sacamos raiz
             //Resultado
-            cout << "Distancia Euclidiana entre punto " << i << " y punto " << j << ": " << distEuclidiana << endl;
+            // cout << "Distancia Euclidiana entre punto " << i << " y punto " << j << ": " << distEuclidiana << endl;
             //Guardamos distancias
             archivo << distEuclidiana << std::endl;
         }
