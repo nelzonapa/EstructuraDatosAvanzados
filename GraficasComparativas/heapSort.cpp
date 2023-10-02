@@ -46,19 +46,19 @@ void heapSort(vector<float>& array) {
 int main() {
     ifstream archivo1("numAleatorios.txt"); //para leer numeros
     if (!archivo1) {
-        cerr << "error archivo 1" << endl;
+        cout << "error archivo 1" << endl;
         return 1;
     }
 
     ofstream archivo2("tiemposHeapSort.txt"); // para guardar los tiempos
     if (!archivo2) {
-        cerr << "error archivo 2" << endl;
+        cout << "error archivo 2" << endl;
         return 1;
     }
 
     ofstream archivo3("numOrdenadosHeapSort.txt"); //para guardar los números ordenados
     if (!archivo3) {
-        cerr << "error archivo 3" << endl;
+        cout << "error archivo 3" << endl;
         return 1;
     }
 
